@@ -85,6 +85,6 @@ const dotted = 'ISTanbuL';
 console.log(`${dotted.toLowerCase()}`);
 console.log(`${dotted.toUpperCase()}`);
 
-//Length
+// Length
 const str5 = 'Life, the universe and everything. Answer:';
 console.log(`${str} ${str5.length}`);
