@@ -1,2 +1,4 @@
 "use strict"
-const clog = console.log
+
+const clog = console.log;
+const nl = "\n";

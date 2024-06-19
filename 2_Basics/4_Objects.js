@@ -15,6 +15,13 @@ user.name  = "Shardendu Mishra";
 user.isLogged = true;
 
 // clog(user);
+// clog(user.hasOwnProperty('id'));        // true
+// clog(user.hasOwnProperty('name'));      // true
+// clog(user.hasOwnProperty('isLogged'));  // true
+
+
+// clog(user.hasOwnProperty('NotRealId')); // false
+
 
 const NewUser = {
     email : "shardendumishra01@google.com",
@@ -86,6 +93,6 @@ const Users = [
 // console.log(Users);
 
 
-clog(Object.keys(Users));
-clog(Object.values(Users));
-clog(Object.entries(Users));
+// clog(Object.keys(Users));
+// clog(Object.values(Users));
+// clog(Object.entries(Users));
