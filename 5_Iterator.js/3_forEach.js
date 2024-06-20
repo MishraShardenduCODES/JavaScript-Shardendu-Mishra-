@@ -164,16 +164,20 @@ const Number = [
 
 
 const List = [
-    {   ItemName  : "iPhone", 
+    {   
+        ItemName  : "iPhone", 
         ItemPrice :  99999,
     },
-    {   ItemName  : "iPad", 
+    {   
+        ItemName  : "iPad", 
         ItemPrice :  89999,
     },
-    {   ItemName  : "MacBooks", 
+    {   
+        ItemName  : "MacBooks", 
         ItemPrice :  179999,
     },
-    {   ItemName  : "iPod", 
+    {   
+        ItemName  : "iPod", 
         ItemPrice :  19999, 
     },
 ];
