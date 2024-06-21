@@ -24,9 +24,10 @@
 
     // add more language
     // const prnt = document.querySelector('.parent');
+
     // console.log(prnt);
     // console.log(prnt.children);
-    // console.log(prnt.children[1]);
+    // console.log(prnt.children[0]);
 
     // for(let i=0;i<prnt.children.length;i++){
     //     console.log(prnt.children[i].innerHTML);
@@ -85,51 +86,52 @@
     // AddLang("C"); 
 
     // add more language
-    function AddOptiLang(Lang){
-        const l = document.createElement('li'); 
-        l.appendChild(document.createTextNode(Lang));
-        document.querySelector('.language').appendChild(l); 
-    }
-    AddOptiLang("Python");
-    AddOptiLang("Mojo");
-    AddOptiLang("Rust");
-    AddOptiLang("Java");
-
-
-    const prnt = document.querySelector('.parent');
-    
-    prnt.children[0].style.color = 'orange';
-    prnt.children[1].style.color = 'orange';
-    prnt.children[2].style.color = 'orange';
-    prnt.children[3].style.color = 'orange';
-    prnt.children[4].style.color = 'orange';
-    prnt.children[5].style.color = 'orange';
-    prnt.children[6].style.color = 'orange';
+    // function AddOptiLang(Lang){
+        // const l = document.createElement('li'); 
+        // l.appendChild(document.createTextNode(Lang));
+        // document.querySelector('.language').appendChild(l); 
+    // }
+    // AddOptiLang("Python");
+    // AddOptiLang("Mojo");
+    // AddOptiLang("Rust");
+    // AddOptiLang("Java");
+    // AddOptiLang("Python");
+    // AddOptiLang("MojGo");
+    // AddOptiLang("Rust");
+    // AddOptiLang("Java");
+        
+    // prnt.children[0].style.color = 'orange';
+    // prnt.children[1].style.color = 'orange';
+    // prnt.children[2].style.color = 'orange';
+    // prnt.children[3].style.color = 'orange';
+    // prnt.children[4].style.color = 'orange';
+    // prnt.children[5].style.color = 'orange';
+    // prnt.children[6].style.color = 'orange';
 
     // console.log(prnt.firstElementChild);  
     // console.log(prnt.lastElementChild);
 
-    // const DayOne = document.querySelectorAll('.day')
-    // console.log(DayOne);
+    // const CompleteDiv = document.querySelectorAll('.day')
+    // console.log(CompleteDiv);
 
     // edit
     
     // method one
-    const LangFour = document.querySelector("li:nth-child(4)") 
+    // const LangFour = document.querySelector("li:nth-child(4)") 
     // LangFour.innerHTML = "C++";
 
     // method two
-    const NewLi = document.createElement('li')
+    // const NewLi = document.createElement('li')
     // NewLi.textContent = 'GO'
     // LangFour.replaceWith(NewLi)
 
     // method three
-    const FourthLang = document.querySelector("li:nth-child(4)")
-    FourthLang.outerHTML = "<li>TypeScript</li>"
+    // const FourthLang = document.querySelector("li:nth-child(4)")
+    // FourthLang.outerHTML = "<li>TypeScript</li>"
 
     // remove
-    const ThirdLang = document.querySelector("li:nth-child(3)")
-    ThirdLang.remove();
+    // const ThirdLang = document.querySelector("li:nth-child(3)")
+    // ThirdLang.remove();
 
 </script>
 </html>
