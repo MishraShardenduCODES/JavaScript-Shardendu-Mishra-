@@ -1,21 +1,135 @@
 <!DOCTYPE html>
-<html lang = "en">
+<html lang="en">
 <head>
-    <meta charset = "UTF-8">
-    <meta http-equiv = "X-UA-Compatible" content = "IE = edge">
-    <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM | Chai aur code</title>
 </head>
-<body style = "background-color: #212121; color: #fff;">
-    <div class = "parent">
-        <div class = "day">Monday</div>
-        <div class = "day">Tuesday</div>
-        <div class = "day">Wednesday</div>
-        <div class = "day">Thursday</div>
+<body style="background-color: #212121; color: #fff;">
+    <div class="parent">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+        <div class="day">Friday</div>
+        <div class="day">Saturday</div>
+        <div class="day">Sunday</div>
     </div>
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
 </body>
 <script>
+
+    // add more language
+    // const prnt = document.querySelector('.parent');
+    // console.log(prnt);
+    // console.log(prnt.children);
+    // console.log(prnt.children[1]);
+
+    // for(let i=0;i<prnt.children.length;i++){
+    //     console.log(prnt.children[i].innerHTML);
+    // }
+    
+    // prnt.children[0].style.color = "orange";
+    // prnt.children[1].style.color = "green";
+    // prnt.children[2].style.color = "yellow";
+    // prnt.children[3].style.color = "red";
+
+    // console.log(prnt.firstElementChild);
+    // console.log(prnt.lastElementChild);
+
+    // const dv = document.createElement('div');
+    // console.log(dv); // <div></div>
+    // dv.className = 'main';
+    // dv.id = Math.floor((Math.random() * 10) + 1);
+    // dv.setAttribute('class', 'class_one');
+    // dv.style.color = 'green';
+    // dv.style.backgroundColor = 'white';
+    // dv.style.padding = '20px';
+    // dv.style.borderRadius = '15px';
+    // dv.style.padding = '12px';
+    // dv.style.fontSize = '3rem';
+    // dv.style.textAlign = 'center';
+    // // dv.innerText = "Krsna malum h naaa";
+    // const addText = document.createTextNode("KR$NAaaaaa malum h naaa");
+    // dv.append(addText);
+    // document.body.appendChild(dv);
+
+
+    // add more language
+    // const prnt = document.querySelector('.parent');
+    // function AddLang(LangName) {
+    //     const dv = document.createElement('div');
+    //     dv.className = 'main';
+    //     dv.id = Math.floor((Math.random() * 10) + 1);
+    //     dv.setAttribute('class', 'class_one');
+    //     dv.style.color = 'green';
+    //     dv.style.backgroundColor = 'white';
+    //     dv.style.padding = '20px';
+    //     dv.style.borderRadius = '15px';
+    //     dv.style.borderBottom = '2px solid black';
+    //     dv.style.margin = '10px 0'; // Add margin to separate the divs
+    //     dv.style.fontSize = '2rem';
+    //     dv.style.textAlign = 'center';
+    //     const addText = document.createTextNode(LangName);
+    //     dv.append(addText);
+    //     document.body.appendChild(dv);
+    // }
+    
+    // AddLang("Python");
+    // AddLang("JavaScript");
+    // AddLang("Java");
+    // AddLang("CPP");
+    // AddLang("C"); 
+
+    // add more language
+    function AddOptiLang(Lang){
+        const l = document.createElement('li'); 
+        l.appendChild(document.createTextNode(Lang));
+        document.querySelector('.language').appendChild(l); 
+    }
+    AddOptiLang("Python");
+    AddOptiLang("Mojo");
+    AddOptiLang("Rust");
+    AddOptiLang("Java");
+
+
     const prnt = document.querySelector('.parent');
-    clog(prnt);
+    
+    prnt.children[0].style.color = 'orange';
+    prnt.children[1].style.color = 'orange';
+    prnt.children[2].style.color = 'orange';
+    prnt.children[3].style.color = 'orange';
+    prnt.children[4].style.color = 'orange';
+    prnt.children[5].style.color = 'orange';
+    prnt.children[6].style.color = 'orange';
+
+    // console.log(prnt.firstElementChild);  
+    // console.log(prnt.lastElementChild);
+
+    // const DayOne = document.querySelectorAll('.day')
+    // console.log(DayOne);
+
+    // edit
+    
+    // method one
+    const LangFour = document.querySelector("li:nth-child(4)") 
+    // LangFour.innerHTML = "C++";
+
+    // method two
+    const NewLi = document.createElement('li')
+    // NewLi.textContent = 'GO'
+    // LangFour.replaceWith(NewLi)
+
+    // method three
+    const FourthLang = document.querySelector("li:nth-child(4)")
+    FourthLang.outerHTML = "<li>TypeScript</li>"
+
+    // remove
+    const ThirdLang = document.querySelector("li:nth-child(3)")
+    ThirdLang.remove();
+
 </script>
 </html>
