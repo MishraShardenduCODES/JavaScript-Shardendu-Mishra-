@@ -7,28 +7,32 @@ const nl = "\n" ;
 
 
 // Browser at Windows object
-// clog(window);
+console.log(window);
 
 // At the next level is document
-// clog(window.document);
+console.log(window.document);
 
 // we can also access by 
-// console.dir(document);
+console.dir(document);
 
 // to get base URL of this page
-// clog(document.baseURI);
+console.log(document.baseURI);
 
 // to get links 
-// clog(document.links);
+console.log(document.links);
 
 // to get a specific link
-// clog(document.links[2]);
+console.log(document.links[2]);
+
 
 // to get the id of an element
-// document.getElementById('catlinks');
+document.getElementById('catlinks');
 
 // to get element using class
-// document.getElementsByClassName('catlinks');
+document.getElementsByClassName('catlinks');
 
+// <h1 id="firstHeading" class="firstHeading mw-first-heading"><span class="mw-page-title-main">Guido van Rossum</span></h1>
+// to change HTML
+document.getElementById('firstHeading').innerHTML = "<h1>Shardendu Mishra Malum h naaaaaaaaaaaaaaaaaa</h1>";
 
 /////////////////////////////////////////////////////////////////
