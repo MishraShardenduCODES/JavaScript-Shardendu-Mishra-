@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>htnml Events </title>
+</head>
+<body style="background-color: #414141; color: aliceblue;">
+    <h2>Amazing image</h2>
+    <div >
+        <ul id="images">
+            <li><img width="200px" id="photoshop" src="https://images.pexels.com/photos/3561339/pexels-photo-3561339.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="photoshop"></li>
+            <li><img width="200px" id="japan" src="https://images.pexels.com/photos/3532553/pexels-photo-3532553.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><img width="200px" id="river" src="https://images.pexels.com/photos/3532551/pexels-photo-3532551.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="" <!--onclick="alert('Lake')--> "></li> 
+            <li><img width="200px" id="owl" src="https://images.pexels.com/photos/3532552/pexels-photo-3532552.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="" ></li>
+            <li><img width="200px" id="prayer" src="https://images.pexels.com/photos/2522671/pexels-photo-2522671.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><a style="color: aliceblue;" href="https://google.com" id="google">Google</a></li>
+        </ul>
+   </div>
+</body>
+<script>
+    // document.getElementById('owl').onclick = ( () => {
+    //     alert("Owl Image");
+    // });
+
+    // document.querySelector('#owl').addEventListener('click' , function(event){
+    //     console.log(event);
+    // },false);
+
+    // document.querySelector('#owl').addEventListener('click' , function(event){
+    //     console.log(event);
+    // },true);
+
+    // document.getElementById('owl').addEventListener('click', function(event) {
+    //     console.log(event.type);
+    // });
+
+    // document.getElementById('owl').addEventListener('click', function(event) {
+    //     console.log(event.timeStamp);
+    // });
+
+    // click speed 
+
+    // let PrevClick = 0;
+    // document.querySelector('body').addEventListener('click' , function(event) {
+    //     let CurrClick = 0;
+    //     CurrClick = event.timeStamp;
+    //     console.log(CurrClick - PrevClick);
+    //     PrevClick = CurrClick;
+    // });
+
+    // document.querySelector('#owl').addEventListener('click', function(event) {
+    //     console.log(event.target); // Logs the specific button that was clicked
+    //     console.log('Clicked element ID : ', event.target.src); // Logs the ID of the clicked element
+    // });
+
+    // document.querySelector('#owl').addEventListener('mouseover', function(event) {
+    //     console.log('Mouse entered Owl Image');
+    //     console.log('relatedTarget:', event.relatedTarget); 
+    //     console.log('toElement:', event.toElement); // Element to which the mouse is going
+    // });
+
+    // document.querySelector('#owl').addEventListener('mouseout', function(event) {
+    //     console.log('Mouse left Owl Image');
+    //     console.log('relatedTarget:', event.relatedTarget); 
+    //     console.log('toElement:', event.toElement); // Element to which the mouse is going
+    // });
+
+    // document.querySelector('#owl').addEventListener('click', function(event) {
+    //     console.log('Event currentTarget:', event.currentTarget); // Output: <img id="owl" src="...">
+    //     console.log('Event target:', event.target); // Output: <img id="owl" src="...">
+    // });
+
+    // document.querySelector('#owl').addEventListener('click', function(event) {
+        // console.log('clientX:', event.clientX); // X coordinate of the mouse pointer relative to the viewport
+        // console.log('clientY:', event.clientY); // Y coordinate of the mouse pointer relative to the viewport
+        // console.log('screenX:', event.screenX); // X coordinate of the mouse pointer relative to the screen
+        // console.log('screenY:', event.screenY); // Y coordinate of the mouse pointer relative to the screen
+    // });
+
+    // document.querySelector('body').addEventListener('keydown', function(event) {
+    //     console.log('altKey:', event.altKey); // Whether the Alt key is pressed (true/false)
+    //     console.log('ctrlKey:', event.ctrlKey); // Whether the Ctrl key is pressed (true/false)
+    //     console.log('shiftKey:', event.shiftKey); // Whether the Shift key is pressed (true/false)
+    // });
+
+    // document.querySelector('body').addEventListener('keydown', function(event) {
+    //     console.log('code : ', event.code);
+    //     console.log('code : ', event.key);
+    // });
+
+    // document.querySelector('#images').addEventListener('click' , (event) =>  {
+    //     console.log("Image Clicked");
+    // },false);
+
+    // document.querySelector('#owl').addEventListener('click' , (event) =>  {
+    //     console.log("Owl Clicked");
+    // },false);
+
+    // Owl
+    // image
+
+
+    // document.querySelector('#images').addEventListener('click' , (event) =>  {
+    //     console.log("Image Clicked");
+    // },true);
+
+    // document.querySelector('#owl').addEventListener('click' , (event) =>  {
+    //     console.log("Owl Clicked");
+    // },true);
+
+    // image
+    // owl
+
+    // document.querySelector('#images').addEventListener('click' , (event) =>  {
+    //     console.log("Image Clicked");
+    //     // event.stopPropagation(); // for true
+    // },false);
+
+    // document.querySelector('#owl').addEventListener('click' , (event) =>  {
+    //     console.log("Owl Clicked");
+    //     event.stopPropagation(); // for false
+    // },false);
+
+    // document.querySelector('#images').addEventListener('click' , (event) =>  {
+    //     console.log("Image Clicked");
+    //     event.stopPropagation(); // for true
+    // },true);
+
+    // document.querySelector('#owl').addEventListener('click' , (event) =>  {
+    //    console.log("Owl Clicked");
+    //    // event.stopPropagation(); // for false
+    // },true);
+
+    // document.querySelector('#owl').addEventListener('click' , (event) =>  {
+    //     console.log(event.target.parentNode);
+    // });
+
+    // remove the image clicked
+
+    // document.querySelector('#images').addEventListener('click' , (event) => {
+    //     event.target.parentNode.remove();
+    // });
+
+    
+</script>
+</html>
