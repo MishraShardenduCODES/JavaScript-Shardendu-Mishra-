@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shardendu Mishra</title>
+</head>
+<body>
+    <h1>Shardendu Mishra Malum Hai Naaaaa</h1>
+    <button class = "start" >Start </button>
+    <button class = "stop"  >Stop  </button>
+</body>
+<script>
+    const Head = document.querySelector('h1');
+    let stpr;
+    const ChangeHead = function(){ 
+        stpr = setInterval(function() {
+            const date = new Date(); 
+            const DateToday = date.toLocaleTimeString(); 
+            Head.innerHTML = DateToday;
+        }, 500);
+    };
+
+    const Stopper = function(){
+        clearInterval(stpr);
+        Head.innerHTML = 'Shardendu Mishra Malum Hai Naaaaa';
+    };
+
+    document.querySelector('.start').addEventListener('click', ChangeHead);
+    document.querySelector('.stop').addEventListener('click', Stopper);
+</script>
+</html>

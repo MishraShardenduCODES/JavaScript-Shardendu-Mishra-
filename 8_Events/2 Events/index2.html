@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shardendu Mishra</title>
+</head>
+<body>
+    <h1>I Love JavaScript</h1>
+    <button id = "stop" >Stop</button>
+</body>
+<script>
+    // setTimeout(() => {
+    //     console.log("Shardendu Mishra");
+    // },2000);
+
+    // const SayName = ( () => {
+    //     console.log("Shardendu Mishra Malum H Naaaaaaaa");
+    // });
+    // // pass the function by reference
+    // setTimeout(SayName,2000);
+
+    // const ChangeHeading = function(){
+    //     const heading = document.querySelector('h1');
+    //     heading.innerHTML = "Shardendu Mishra Malum h Naaa";       
+    // };
+
+    // setTimeout(ChangeHeading,2000);
+
+    // const ChangeHeading = function(){
+    //     const heading = document.querySelector('h1');
+    //     heading.innerHTML = "Shardendu Mishra Malum h Naaa";       
+    // };
+
+    // const TimeInterval = setTimeout(ChangeHeading,2000);
+    // clearTimeout(TimeInterval); 
+
+    const ChangeHeading = function(){
+        const heading = document.querySelector('h1');
+        heading.innerHTML = "Shardendu Mishra Malum h Naaa";       
+    };
+    const HeadingChanger = setTimeout(ChangeHeading,2000)
+
+    document.querySelector('#stop').addEventListener('click', function(){
+        clearTimeout(HeadingChanger);
+    })
+</script>
+</html>
